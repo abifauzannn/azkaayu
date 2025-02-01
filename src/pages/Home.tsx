@@ -55,12 +55,12 @@ const Home = () => {
         <div className="relative flex flex-col items-center w-[40%] ">
           {/* Background Kuning */}
           <div className="absolute -z-10 w-100 h-90 bg-[#FCCD2A] rounded-se-[200px] rounded-es-[200px] rounded-tr-[400px] rounded-tl-[250px] rounded-bl-[500px] rounded-br-[700px]   top-30"></div>
-          <div className="absolute -z-10 w-40 h-40 border-4 border-white bg-[#1F4529] rounded-full top-30 left-90 flex items-center justify-center">
+          <div className="absolute -z-10 w-30 h-30 border-4 border-white bg-[#1F4529] rounded-full top-30 left-90 flex items-center justify-center">
             <div className="relative slow-spin">
               <svg
                 className="mx-auto"
                 width="200"
-                height="160"
+                height="120"
                 viewBox="0 0 120 120"
                 xmlns="http://www.w3.org/2000/svg"
               >
