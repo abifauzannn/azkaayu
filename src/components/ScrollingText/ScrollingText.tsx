@@ -28,13 +28,13 @@ const AutoScrollingText = () => {
         data-scroll-speed="1"
       >
         {/* Konten scroll yang digandakan */}
-        <div className="flex flex-row items-center gap-10 text-3xl text-[#123524] font-semibold">
+        <div className="flex flex-row items-center gap-10 text-3xl text-[#123524] font-bold">
           <FaStarOfLife /> SEO SPECIALIST <FaStarOfLife /> CONTENT WRITING
           <FaStarOfLife /> SOCIAL MEDIA MARKETING <FaStarOfLife /> CAMPAIGN MANAGEMENT
           <FaStarOfLife /> EVENT MANAGEMENT <FaStarOfLife /> MARKET RESEARCH <FaStarOfLife /> PUBLIC SPEAKING <FaStarOfLife /> DIGITAL TOOLS
         </div>
         {/* Konten yang sama digandakan untuk infinite scrolling */}
-        <div className="flex flex-row items-center gap-10 text-3xl text-[#123524] font-semibold">
+        <div className="flex flex-row items-center gap-10 text-3xl text-[#123524] font-bold">
           <FaStarOfLife className="ml-10" /> SEO SPECIALIST <FaStarOfLife /> CONTENT WRITING
           <FaStarOfLife /> SOCIAL MEDIA MARKETING <FaStarOfLife /> CAMPAIGN MANAGEMENT
           <FaStarOfLife /> EVENT MANAGEMENT <FaStarOfLife /> MARKET RESEARCH <FaStarOfLife /> PUBLIC SPEAKING <FaStarOfLife /> DIGITAL TOOLS

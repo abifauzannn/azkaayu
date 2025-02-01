@@ -8,3 +8,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.slow-spin {
+  animation: spin 10s linear infinite; /* Ubah '2s' menjadi durasi yang Anda inginkan */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
