@@ -2,7 +2,6 @@ import Navbar from "../components/Navbar";
 import { GoTriangleRight } from "react-icons/go";
 import ProfilePicture from "../assets/images/profile.png";
 import ScrollingText from "../components/ScrollingText/ScrollingText";
-import { GoDot } from "react-icons/go";
 
 const Home = () => {
   return (
