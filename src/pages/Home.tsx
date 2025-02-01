@@ -1,4 +1,4 @@
-import React from "react";
+
 import Navbar from "../components/Navbar";
 import { GoTriangleRight } from "react-icons/go";
 import ProfilePicture from "../assets/images/profile.png"
