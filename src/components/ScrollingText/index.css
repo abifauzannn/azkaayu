@@ -1,0 +1,27 @@
+.scroll-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #FCCD2A;
+  padding: 10px 0;
+  position: relative;
+}
+
+.scroll-text {
+  animation: scroll-loop 50s linear infinite;
+}
+
+
+.scroll-text span {
+  display: inline-block;
+  padding-right: 10px; /* Jarak antar teks */
+}
+
+@keyframes scroll-loop {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-300%);
+  }
+}
