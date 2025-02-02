@@ -4,10 +4,11 @@ import ProfilePicture from "../assets/images/profile.png";
 import ScrollingText from "../components/ScrollingText/ScrollingText";
 import PortfolioButtons from "../components/ButtonView";
 import CardList from "../components/Services/Services"
+import Tools from "../components/FilterTools"
 
 const Home = () => {
   return (
-    <div>
+   
       <div className="pt-2 flex flex-col">
         <Navbar />
         <section
@@ -105,7 +106,7 @@ const Home = () => {
         </section>
         <ScrollingText />
 
-        <section id="about" className="flex flex-col h-50% p-20 ">
+        <section id="services" className="flex flex-col h-50% p-20">
           <h2 className="relative text-[#123524] text-2xl font-bold flex pb-3">
             <span className="absolute left-0 top-4 transform -translate-y-1/2 w-1 h-3 bg-[#FCCD2A]"></span>
             <span className="ml-4 text-4xl">Services</span>
@@ -132,34 +133,28 @@ const Home = () => {
           </div>
         </section>
 
-        <section id="about" className="flex flex-col h-screen p-20 ">
+        <section id="about" className="flex flex-col h-screen pb-20 pt-16 px-20">
           <h2 className="relative text-[#123524] text-2xl font-bold flex pb-3">
             <span className="absolute left-0 top-4 transform -translate-y-1/2 w-1 h-3 bg-[#FCCD2A]"></span>
-            <span className="ml-4 text-4xl">Services</span>
+            <span className="ml-4 text-4xl">My Favorite Tools</span>
           </h2>
 
           <div className="flex flex-row justify-between">
             <h2 className="relative text-[#123524] text-2xl font-bold flex items-center space-x-3">
               <span className="ml-4 text-4xl font-thin italic text-[#FCCD2A]">
-                Services
+                Exploring the Tools
               </span>
               <span className="w-2 h-7 mt-1 bg-black"></span>
-              <span className=" text-4xl font-bold text-black">Provide</span>
+              <span className=" text-4xl font-bold text-black">Behind My Project</span>
             </h2>
-
-            <PortfolioButtons
-              portfolioText="View All Services"
-              hireMeText=""
-              TriangleIcon={GoTriangleRight}
-            />
           </div>
 
-          <div className="flex flex-row justify-between gap-5 mt-12">
-            <CardList/>
+          <div className="flex flex-row justify-center items-center gap-5 mt-12 w-full">
+            <Tools/>
           </div>
         </section>
       </div>
-    </div>
+   
   );
 };
 
