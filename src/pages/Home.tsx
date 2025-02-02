@@ -5,7 +5,6 @@ import ScrollingText from "../components/ScrollingText/ScrollingText";
 import PortfolioButtons from "../components/ButtonView";
 import CardList from "../components/Services/Services";
 import Tools from "../components/FilterTools";
-import { FaGraduationCap } from "react-icons/fa6";
 import WorkExperience from "../components/Education-Work/WorkExperience";
 import EducationBackground from "../components/Education-Work/Education";
 
