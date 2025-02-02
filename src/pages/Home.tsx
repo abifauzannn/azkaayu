@@ -9,14 +9,14 @@ import Tools from "../components/FilterTools"
 const Home = () => {
   return (
    
-      <div className="pt-2 flex flex-col">
+      <div className="pt-2 flex flex-col overflow-y-auto">
         <Navbar />
         <section
           id="about"
-          className="container flex flex-row items-center justify-between h-[calc(100vh-5rem)] px-20"
+          className="container flex flex-row items-center justify-between h-[calc(100vh-5rem)] px-10"
         >
           {/* Flex item yang lebih besar */}
-          <div className="flex flex-col space-y-1 w-[55%]">
+          <div className="flex flex-col space-y-1 w-[60%]">
             <p className="relative text-black text-left text-1xl w-[120px] font-thin border-2 border-black p-3 mb-5 ml-2">
               Hello There!
               <span className="absolute top-[-10px] left-[-10px] w-4 h-4 bg-[#FCCD2A] border-2 border-black"></span>
@@ -49,10 +49,10 @@ const Home = () => {
           </div>
 
           {/* Flex item yang lebih kecil */}
-          <div className="relative flex flex-col items-center w-[40%] ">
+          <div className="relative flex flex-col items-center w-[40%]  ml-7">
             {/* Background Kuning */}
             <div className="absolute -z-10 w-100 h-90 bg-[#FCCD2A] rounded-se-[200px] rounded-es-[200px] rounded-tr-[700px] rounded-tl-[250px] rounded-bl-[1400px] rounded-br-[1500px] top-25"></div>
-            <div className="absolute -z-10 w-30 h-30 border-4 border-white bg-[#1F4529] rounded-full top-30 left-90 flex items-center justify-center">
+            <div className="absolute -z-10 w-30 h-30 border-4 border-white bg-[#1F4529] rounded-full top-30 left-85 flex items-center justify-center">
               <div className="relative slow-spin">
                 <svg
                   className="mx-auto"
@@ -100,7 +100,7 @@ const Home = () => {
             <img
               src={ProfilePicture}
               alt="Profile"
-              className="w-[80%] relative mb-15"
+              className="w-[75%] relative mb-15"
             />
           </div>
         </section>
@@ -153,6 +153,7 @@ const Home = () => {
             <Tools/>
           </div>
         </section>
+
       </div>
    
   );

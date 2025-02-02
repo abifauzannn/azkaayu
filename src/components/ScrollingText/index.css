@@ -8,20 +8,26 @@
 }
 
 .scroll-text {
-  animation: scroll-loop 50s linear infinite;
+  display: flex;
+  gap: 20px;
+  animation: scroll-left 15s linear infinite;
 }
 
-
-.scroll-text span {
-  display: inline-block;
-  padding-right: 10px; /* Jarak antar teks */
+.scroll-content {
+  display: flex;
+  gap: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #123524;
 }
 
-@keyframes scroll-loop {
+/* Animasi untuk scrolling otomatis */
+@keyframes scroll-left {
   from {
     transform: translateX(0);
   }
   to {
-    transform: translateX(-300%);
+    transform: translateX(-100%);
   }
 }
+

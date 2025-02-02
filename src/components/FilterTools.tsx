@@ -63,7 +63,7 @@ export default function Tools() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 20 }}
               transition={{ duration: 0.3 }}
-              className="py-5 bg-white text-black rounded-2xl shadow-md border-gray-200 text-center flex flex-col items-center gap-2 px-3"
+              className="py-5 bg-white text-black rounded-2xl border border-gray-200 text-center flex flex-col items-center gap-2 px-3"
             >
               <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
                 {/* Render the icon */}
