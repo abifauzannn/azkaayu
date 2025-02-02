@@ -100,7 +100,7 @@ const Home = () => {
             <img
               src={ProfilePicture}
               alt="Profile"
-              className="w-[75%] relative mb-15"
+              className="max-w-[300px] relative mb-15"
             />
           </div>
         </section>
