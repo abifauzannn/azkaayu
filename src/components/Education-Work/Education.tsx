@@ -17,7 +17,7 @@ const educationData: Education = {
   activities: [
     "Marketing Crew Telkom University (2023)",
     "Ready Radio Club (2023)",
-    "SIGMA BEM KKB TEL-U (2022)",
+    "SIGMA BEM FKB TEL-U (2022)",
     "Ideafest (2022)",
     "Urban Village Telkom University GERATU (2022)",
   ],
