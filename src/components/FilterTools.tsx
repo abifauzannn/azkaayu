@@ -54,7 +54,7 @@ export default function Tools() {
       </div>
 
       {/* Tools List */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-6 gap-4">
         <AnimatePresence mode="wait">
           {filteredTools.map((tool, index) => (
             <motion.div

@@ -1,13 +1,13 @@
 
 @import "tailwindcss";
 
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto; /* Agar tetap di tengah */
 }
+
 
 .slow-spin {
   animation: spin 10s linear infinite; /* Ubah '2s' menjadi durasi yang Anda inginkan */

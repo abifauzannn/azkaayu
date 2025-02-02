@@ -13,7 +13,7 @@ const Home = () => {
         <Navbar />
         <section
           id="about"
-          className="flex flex-row items-center justify-between h-[calc(100vh-5rem)] px-20"
+          className="container flex flex-row items-center justify-between h-[calc(100vh-5rem)] px-20"
         >
           {/* Flex item yang lebih besar */}
           <div className="flex flex-col space-y-1 w-[55%]">
@@ -106,7 +106,7 @@ const Home = () => {
         </section>
         <ScrollingText />
 
-        <section id="services" className="flex flex-col h-50% p-20">
+        <section id="services" className="flex flex-col h-50% p-20 container">
           <h2 className="relative text-[#123524] text-2xl font-bold flex pb-3">
             <span className="absolute left-0 top-4 transform -translate-y-1/2 w-1 h-3 bg-[#FCCD2A]"></span>
             <span className="ml-4 text-4xl">Services</span>
@@ -133,7 +133,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section id="about" className="flex flex-col h-screen pb-20 pt-16 px-20">
+        <section id="about" className="flex flex-col h-screen pb-20 pt-15  px-20 container">
           <h2 className="relative text-[#123524] text-2xl font-bold flex pb-3">
             <span className="absolute left-0 top-4 transform -translate-y-1/2 w-1 h-3 bg-[#FCCD2A]"></span>
             <span className="ml-4 text-4xl">My Favorite Tools</span>

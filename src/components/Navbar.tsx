@@ -2,7 +2,7 @@
 
 const Navbar = () => {
   return (
-    <header className="py-1 px-1 bg-[#1F4529] shadow-md rounded-full z-100 mx-20">
+    <header className="py-1 px-1 bg-[#1F4529] shadow-md rounded-full z-100 mx-20 container">
       <nav className="flex flex-row justify-between items-center">
         <div className="flex flex-row items-center space-x-3    ">
           {/* <div className="relative w-12 h-12  bg-yellow-500 rounded-full flex items-center justify-center">
@@ -32,7 +32,7 @@ const Navbar = () => {
           </a>
         </div>
 
-        <div className="text-sm font-bold px-5 py-3 rounded-full bg-white text-black">
+        <div className="text-sm font-bold px-5 py-3 w-40 rounded-full bg-white text-black text-center">
           Contact Me
         </div>
       </nav>
