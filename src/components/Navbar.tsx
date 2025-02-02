@@ -1,8 +1,8 @@
-
+import { TbCircleDashedLetterA } from "react-icons/tb";
 
 const Navbar = () => {
   return (
-    <header className="py-1 px-1 bg-[#1F4529] shadow-md rounded-full z-100 mx-20 container">
+    <header className="py-2 px-2 bg-[#1F4529] shadow-md rounded-full z-100 mx-20 container">
       <nav className="flex flex-row justify-between items-center">
         <div className="flex flex-row items-center space-x-3    ">
           {/* <div className="relative w-12 h-12  bg-yellow-500 rounded-full flex items-center justify-center">
@@ -11,10 +11,11 @@ const Navbar = () => {
             </div>
           </div> */}
 
-          <p className="text-white text-2xl ml-4 font-semibold">
-            Azka Ayu Maharani
-            <span className="text-[#FCCD2A] font-semibold">.</span>
-          </p>
+          <div className="text-white text-2xl font-semibold">
+           <div className="w-12 h-12 bg-[#FCCD2A] rounded-full flex items-center justify-center text-[#1F4529]">
+           <TbCircleDashedLetterA size={35} />
+           </div>
+          </div>
         </div>
 
         <div className="space-x-8 font-semibold">

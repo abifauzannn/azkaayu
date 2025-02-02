@@ -17,7 +17,7 @@ const Home = () => {
         >
           {/* Flex item yang lebih besar */}
           <div className="flex flex-col space-y-1 w-[60%]">
-            <p className="relative text-black text-left text-1xl w-[120px] font-thin border-2 border-black p-3 mb-5 ml-2">
+            <p className="relative text-black text-left text-1xl w-[130px] font-thin border-2 border-black p-3 mb-5 ml-2">
               Hello There!
               <span className="absolute top-[-10px] left-[-10px] w-4 h-4 bg-[#FCCD2A] border-2 border-black"></span>
               <span className="absolute top-[-10px] right-[-10px] w-4 h-4 bg-[#FCCD2A] border-2 border-black"></span>
@@ -79,7 +79,7 @@ const Home = () => {
                     <textPath
                       href="#curvedPath"
                       startOffset="50%"
-                      className="uppercase tracking-wider"
+                      className="uppercase tracking-widest"
                     >
                       Hire me ★ Hire me ★ Hire me ★
                     </textPath>

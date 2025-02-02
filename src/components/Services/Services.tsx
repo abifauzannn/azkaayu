@@ -24,7 +24,7 @@ const Card: React.FC<{
   icon: Icon, // Destructure the icon here
 }) => {
   return (
-    <div className="w-auto h-auto bg-white rounded-2xl p-9 border-slate-200 border">
+    <div className="w-auto h-auto bg-white rounded-2xl p-7 border-slate-200 border flex flex-col">
       <div className="w-15 h-15 bg-[#FCCD2A] rounded-full flex items-center justify-center">
         <div className="w-8 h-8 rounded-full flex items-center justify-center">
           {/* Render the icon here */}
@@ -32,8 +32,10 @@ const Card: React.FC<{
         </div>
       </div>
       <h2 className="text-xl font-semibold mt-4">{title}</h2>
-      <p className="mt-2 text-sm text-gray-400 text-justify">{description}</p>
-      <div className="flex flex-row gap-2 mt-2 items-center cursor-pointer">
+      <p className="mt-2 text-sm text-gray-400 text-justify flex-grow">
+        {description}
+      </p>
+      <div className="flex flex-row gap-2 mt-2 items-center cursor-pointer justify-start">
         <p className="font-bold text-[#123524] text-sm">Learn More</p>
         <span className="text-[#FCCD2A]">
           <FaArrowRight size={16} />
