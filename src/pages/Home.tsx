@@ -8,6 +8,7 @@ import Tools from "../components/FilterTools";
 import WorkExperience from "../components/Education-Work/WorkExperience";
 import EducationBackground from "../components/Education-Work/Education";
 import ExperienceCard from "../components/Projects";
+import BlogList from "../components/Blogs";
 
 const Home = () => {
   return (
@@ -111,7 +112,7 @@ const Home = () => {
       <section id="services" className="flex flex-col h-50% p-20 container">
         <h2 className="relative text-[#123524] text-2xl font-bold flex pb-3">
           <span className="absolute left-0 top-4 transform -translate-y-1/2 w-1 h-3 bg-[#FCCD2A]"></span>
-          <span className="ml-4 text-4xl">Services</span>
+          <span className="ml-4 text-2xl">Services</span>
         </h2>
 
         <div className="flex flex-row justify-between">
@@ -135,13 +136,10 @@ const Home = () => {
         </div>
       </section>
 
-      <section
-        id="tools"
-        className="flex flex-col h-screen pb-20 pt-15  px-20 container"
-      >
+      <section id="tools" className="flex flex-col h-screen pb-20 pt-15  px-20 container">
         <h2 className="relative text-[#123524] text-2xl font-bold flex pb-3">
           <span className="absolute left-0 top-4 transform -translate-y-1/2 w-1 h-3 bg-[#FCCD2A]"></span>
-          <span className="ml-4 text-4xl">My Favorite Tools</span>
+          <span className="ml-4 text-2xl">My Favorite Tools</span>
         </h2>
 
         <div className="flex flex-row justify-between">
@@ -166,8 +164,8 @@ const Home = () => {
         className="flex flex-col  pb-20 pt-15 px-20 container"
       >
         <h2 className="relative text-[#123524] text-2xl font-bold flex pb-3 justify-center">
-          <span className="absolute left-80 top-5 transform -translate-y-1/2 w-1 h-5 bg-[#FCCD2A] mr-4"></span>
-          <span className="text-4xl text-center">My Education & Work</span>
+          <span className="absolute left-95 top-4 transform -translate-y-1/2 w-1 h-5 bg-[#FCCD2A] mr-4"></span>
+          <span className="text-2xl text-center">My Education & Work</span>
         </h2>
 
         <div className="flex flex-row justify-center items-center w-full">
@@ -180,28 +178,25 @@ const Home = () => {
           </h2>
         </div>
 
-        <div className="flex flex-row justify-center items-center gap-5 mt-12 w-full"> 
-          <EducationBackground/>
-          <WorkExperience/>
+        <div className="flex flex-row justify-center items-center gap-5 mt-12 w-full">
+          <EducationBackground />
+          <WorkExperience />
         </div>
       </section>
 
-      <section
-        id="tools"
-        className="flex flex-col pb-20 pt-15 px-20 container"
-      >
+      <section id="tools" className="flex flex-col pb-20 pt-15 px-20 container">
         <h2 className="relative text-[#123524] text-2xl font-bold flex pb-3">
           <span className="absolute left-0 top-4 transform -translate-y-1/2 w-1 h-3 bg-[#FCCD2A]"></span>
-          <span className="ml-4 text-4xl">My Portfolio</span>
+          <span className="ml-4 text-2xl">My Portfolio</span>
         </h2>
 
         <div className="flex flex-row justify-between">
           <h2 className="relative text-[#123524] text-2xl font-bold flex items-center space-x-3">
-          <span className="ml-4 text-4xl font-bold text-black">
+            <span className="ml-4 text-4xl font-bold text-black">
               My Latest
             </span>
             <span className="text-4xl font-thin italic text-[#FCCD2A]">
-             Project
+              Project
             </span>
           </h2>
           <PortfolioButtons
@@ -210,15 +205,40 @@ const Home = () => {
             TriangleIcon={GoTriangleRight}
           />
         </div>
-
         <div className="flex flex-row justify-center items-center gap-5 mt-12 w-full">
-
-                <ExperienceCard/>
-           
+          <ExperienceCard />
         </div>
       </section>
 
+      <section id="blogs" className="flex flex-col pt-15 pb-20 px-20  container">
+        <h2 className="relative text-[#123524] text-2xl font-bold flex pb-3">
+          <span className="absolute left-0 top-4 transform -translate-y-1/2 w-1 h-3 bg-[#FCCD2A]"></span>
+          <span className="ml-4 text-2xl">News & Blogs</span>
+        </h2>
 
+        <div className="flex flex-row justify-between items-center">
+          <h2 className="relative text-[#123524] text-2xl font-bold flex items-center space-x-3">
+            <div className="flex flex-col gap-2">
+              <span className="ml-4 text-4xl font-bold text-black">
+                Our Latest
+              </span>
+              <span className="ml-4 text-4xl font-thin italic text-[#FCCD2A]">
+                News & Blogs
+              </span>
+            </div>
+          </h2>
+
+          <PortfolioButtons
+            portfolioText="View All Blogs"
+            hireMeText=""
+            TriangleIcon={GoTriangleRight}
+          />
+        </div>
+
+        <div className="flex flex-row justify-between gap-5 mt-12">
+          <BlogList/>
+        </div>
+      </section>
     </div>
   );
 };
