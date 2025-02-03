@@ -9,6 +9,7 @@ import WorkExperience from "../components/Education-Work/WorkExperience";
 import EducationBackground from "../components/Education-Work/Education";
 import ExperienceCard from "../components/Projects";
 import BlogList from "../components/Blogs";
+import CityHover from "../components/Achievement";
 
 const Home = () => {
   return (
@@ -136,7 +137,10 @@ const Home = () => {
         </div>
       </section>
 
-      <section id="tools" className="flex flex-col h-screen pb-20 pt-15  px-20 container">
+      <section
+        id="tools"
+        className="flex flex-col h-screen pb-20 pt-15  px-20 container"
+      >
         <h2 className="relative text-[#123524] text-2xl font-bold flex pb-3">
           <span className="absolute left-0 top-4 transform -translate-y-1/2 w-1 h-3 bg-[#FCCD2A]"></span>
           <span className="ml-4 text-2xl">My Favorite Tools</span>
@@ -210,7 +214,10 @@ const Home = () => {
         </div>
       </section>
 
-      <section id="blogs" className="flex flex-col pt-15 pb-20 px-20  container">
+      <section
+        id="blogs"
+        className="flex flex-col pt-15 pb-20 px-20  container"
+      >
         <h2 className="relative text-[#123524] text-2xl font-bold flex pb-3">
           <span className="absolute left-0 top-4 transform -translate-y-1/2 w-1 h-3 bg-[#FCCD2A]"></span>
           <span className="ml-4 text-2xl">News & Blogs</span>
@@ -236,7 +243,34 @@ const Home = () => {
         </div>
 
         <div className="flex flex-row justify-between gap-5 mt-12">
-          <BlogList/>
+          <BlogList />
+        </div>
+      </section>
+
+      <section
+        id="achievement"
+        className="flex flex-col pt-15 pb-20 px-20 container"
+      >
+        <h2 className="relative text-[#123524] text-2xl font-bold flex pb-3">
+          <span className="absolute left-0 top-4 transform -translate-y-1/2 w-1 h-3 bg-[#FCCD2A]"></span>
+          <span className="ml-4 text-2xl">Achievements</span>
+        </h2>
+
+        <div className="flex flex-row justify-between items-center">
+          <h2 className="relative text-[#123524] text-2xl font-bold flex items-center space-x-3">
+            <div className="flex flex-col gap-2">
+              <span className="ml-4 text-4xl font-bold text-black">
+                Our Proud
+              </span>
+              <span className="ml-4 text-4xl font-thin italic text-[#FCCD2A]">
+                Achievements
+              </span>
+            </div>
+          </h2>
+        </div>
+
+        <div className="mt-12">
+          <CityHover />
         </div>
       </section>
     </div>

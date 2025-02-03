@@ -4,6 +4,7 @@ import CWDG1 from "../assets/images/projects/cw&dg31.png";
 import CWDG2 from "../assets/images/projects/cw&dg2.png";
 import CWDG3 from "../assets/images/projects/cw&dg3.png";
 import SeoContent from "../assets/images/projects/SEO Content.png";
+import PM1 from "../assets/images/projects/project management.png";
 import { TbArrowBigRightLinesFilled } from "react-icons/tb";
 
 interface Experience {
@@ -38,6 +39,11 @@ const experienceData: Experience[] = [
     title: "Content Writing & Design Graphic",
     tools: ["Canva"],
     image: CWDG3,
+  },
+  {
+    title: "Project Management",
+    tools: ["Spreadsheet"],
+    image: PM1,
   },
 ];
 
