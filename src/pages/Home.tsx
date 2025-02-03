@@ -10,6 +10,9 @@ import EducationBackground from "../components/Education-Work/Education";
 import ExperienceCard from "../components/Projects";
 import BlogList from "../components/Blogs";
 import CityHover from "../components/Achievement";
+import { TbCircleDashedLetterA } from "react-icons/tb";
+import { FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
 
 const Home = () => {
   return (
@@ -108,7 +111,6 @@ const Home = () => {
           />
         </div>
       </section>
-      <ScrollingText />
 
       <section id="services" className="flex flex-col h-50% p-20 container">
         <h2 className="relative text-[#123524] text-2xl font-bold flex pb-3">
@@ -271,6 +273,84 @@ const Home = () => {
 
         <div className="mt-12">
           <CityHover />
+        </div>
+      </section>
+
+      <ScrollingText />
+
+      <section
+        id="achievement"
+        className="flex flex-col pt-15 pb-20 px-20 container"
+      >
+        <div className="flex flex-row justify-between items-center">
+          <h2 className="relative text-[#123524] text-2xl font-bold flex items-center space-x-3">
+            <div className="flex flex-col gap-2">
+              <span className=" text-4xl font-bold text-black gap-1">
+                Lets's
+                <span className="italic font-thin text-[#FCCD2A] px-3 mr-1">
+                  Connect
+                </span>
+                There
+              </span>
+            </div>
+          </h2>
+
+          <PortfolioButtons
+            portfolioText="View All Blogs"
+            hireMeText=""
+            TriangleIcon={GoTriangleRight}
+          />
+        </div>
+
+        <div className="w-full border-1 my-5 text-gray-200"></div>
+
+        <div className="flex flex-row justify-evenly gap-9 mt-12 w-full">
+          <div className="flex flex-col max-w-[350px] w-full">
+            <div className="flex flex-row items-center gap-2">
+              <div className="w-12 h-12 bg-[#FCCD2A] rounded-full flex items-center justify-center text-[#1F4529]">
+                <TbCircleDashedLetterA size={35} />
+              </div>
+              <h2 className="font-bold text-2xl">Azka Ayu Maharani</h2>
+            </div>
+            <p className=" text-justify text-gray-600 py-8">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi,
+              culpa temporibus? Numquam neque quibusdam aliquid temporibus
+            </p>
+            <div className="flex flex-row space-x-4">
+              <div className="w-12 h-12 bg-[#FCCD2A] rounded-full flex items-center justify-center text-[#123524]">
+                <FaInstagram size={24} />
+              </div>
+              <div className="w-12 h-12 bg-[#FCCD2A] rounded-full flex items-center justify-center text-[#123524]">
+                <FaLinkedin size={24} />
+              </div>
+              <div className="w-12 h-12 bg-[#FCCD2A] rounded-full flex items-center justify-center text-[#123524]">
+                <FaWhatsapp size={24} />
+              </div>
+              <div className="w-12 h-12 bg-[#FCCD2A] rounded-full flex items-center justify-center text-[#123524]">
+                <SiGmail size={24} />
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-row justify-around max-w-[400px] w-full gap-6">
+            <div className="flex flex-col space-y-3 text-gray-600">
+                <h2 className="mb-4 font-bold text-[#FCCD2A]">Navigation</h2> 
+                <a href="" className="text-gray-600">Home</a>
+                <a href="" className="text-gray-600">Services</a>
+                <a href="" className="text-gray-600">Tools</a>
+                <a href="" className="text-gray-600">Education & Work</a>
+                <a href="" className="text-gray-600">Portfolio</a>
+                <a href="" className="text-gray-600">News & Blogs</a>
+            </div>
+            <div className="flex flex-col space-y-3 text-gray-600">
+                <h2 className="mb-4 font-bold text-[#FCCD2A]">Contact</h2> 
+                <p className="text-gray-600">azkaayumhrn@gmail.com</p>
+                <p className="text-gray-600">0895701899600</p>
+                <p className="text-gray-600">linkedin.com/in/azka-ayu-maharani</p>
+                <p className="text-gray-600">Bandung, Indonesia</p>
+            </div>
+          </div>
+
         </div>
       </section>
     </div>
