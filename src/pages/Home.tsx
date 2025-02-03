@@ -7,6 +7,7 @@ import CardList from "../components/Services/Services";
 import Tools from "../components/FilterTools";
 import WorkExperience from "../components/Education-Work/WorkExperience";
 import EducationBackground from "../components/Education-Work/Education";
+import ExperienceCard from "../components/Projects";
 
 const Home = () => {
   return (
@@ -182,6 +183,38 @@ const Home = () => {
         <div className="flex flex-row justify-center items-center gap-5 mt-12 w-full"> 
           <EducationBackground/>
           <WorkExperience/>
+        </div>
+      </section>
+
+      <section
+        id="tools"
+        className="flex flex-col pb-20 pt-15 px-20 container"
+      >
+        <h2 className="relative text-[#123524] text-2xl font-bold flex pb-3">
+          <span className="absolute left-0 top-4 transform -translate-y-1/2 w-1 h-3 bg-[#FCCD2A]"></span>
+          <span className="ml-4 text-4xl">My Portfolio</span>
+        </h2>
+
+        <div className="flex flex-row justify-between">
+          <h2 className="relative text-[#123524] text-2xl font-bold flex items-center space-x-3">
+          <span className="ml-4 text-4xl font-bold text-black">
+              My Latest
+            </span>
+            <span className="text-4xl font-thin italic text-[#FCCD2A]">
+             Project
+            </span>
+          </h2>
+          <PortfolioButtons
+            portfolioText="View All Projects"
+            hireMeText=""
+            TriangleIcon={GoTriangleRight}
+          />
+        </div>
+
+        <div className="flex flex-row justify-center items-center gap-5 mt-12 w-full">
+
+                <ExperienceCard/>
+           
         </div>
       </section>
 
