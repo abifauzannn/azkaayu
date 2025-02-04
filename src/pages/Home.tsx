@@ -16,12 +16,10 @@ import { SiGmail } from "react-icons/si";
 
 const Home = () => {
   return (
-    <div className="pt-2 flex flex-col overflow-y-auto">
+    
+    <div className=" pt-17 flex flex-col overflow-y-auto">
       <Navbar />
-      <section
-        id="about"
-        className="container flex flex-row items-center justify-between h-[calc(100vh-5rem)] px-10"
-      >
+      <section id="about" className="container flex flex-row items-center justify-between h-[calc(100vh-5rem)] px-10">
         {/* Flex item yang lebih besar */}
         <div className="flex flex-col space-y-1 w-[60%]">
           <p className="relative text-black text-left text-1xl w-[130px] font-thin border-2 border-black p-3 mb-5 ml-2">
@@ -139,10 +137,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section
-        id="tools"
-        className="flex flex-col h-screen pb-20 pt-15  px-20 container"
-      >
+      <section id="tools" className="flex flex-col h-screen pb-20 pt-15  px-20 container">
         <h2 className="relative text-[#123524] text-2xl font-bold flex pb-3">
           <span className="absolute left-0 top-4 transform -translate-y-1/2 w-1 h-3 bg-[#FCCD2A]"></span>
           <span className="ml-4 text-2xl">My Favorite Tools</span>
@@ -165,10 +160,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section
-        id="Background"
-        className="flex flex-col  pb-20 pt-15 px-20 container"
-      >
+      <section id="background" className="flex flex-col  pb-20 pt-15 px-20 container">
         <h2 className="relative text-[#123524] text-2xl font-bold flex pb-3 justify-center">
           <span className="absolute left-95 top-4 transform -translate-y-1/2 w-1 h-5 bg-[#FCCD2A] mr-4"></span>
           <span className="text-2xl text-center">My Education & Work</span>
@@ -190,7 +182,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section id="tools" className="flex flex-col pb-20 pt-15 px-20 container">
+      <section id="portfolio" className="flex flex-col pb-20 pt-15 px-20 container">
         <h2 className="relative text-[#123524] text-2xl font-bold flex pb-3">
           <span className="absolute left-0 top-4 transform -translate-y-1/2 w-1 h-3 bg-[#FCCD2A]"></span>
           <span className="ml-4 text-2xl">My Portfolio</span>
@@ -216,10 +208,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section
-        id="blogs"
-        className="flex flex-col pt-15 pb-20 px-20  container"
-      >
+      <section id="blogs" className="flex flex-col pt-15 pb-20 px-20  container">
         <h2 className="relative text-[#123524] text-2xl font-bold flex pb-3">
           <span className="absolute left-0 top-4 transform -translate-y-1/2 w-1 h-3 bg-[#FCCD2A]"></span>
           <span className="ml-4 text-2xl">News & Blogs</span>
@@ -249,10 +238,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section
-        id="achievement"
-        className="flex flex-col pt-15 pb-20 px-20 container"
-      >
+      <section id="achievement" className="flex flex-col pt-15 pb-20 px-20 container">
         <h2 className="relative text-[#123524] text-2xl font-bold flex pb-3">
           <span className="absolute left-0 top-4 transform -translate-y-1/2 w-1 h-3 bg-[#FCCD2A]"></span>
           <span className="ml-4 text-2xl">Achievements</span>
@@ -278,15 +264,12 @@ const Home = () => {
 
       <ScrollingText />
 
-      <section
-        id="achievement"
-        className="flex flex-col pt-15 pb-20 px-20 container"
-      >
+      <section id=""  className="flex flex-col pt-15 pb-20 px-20 container">
         <div className="flex flex-row justify-between items-center">
           <h2 className="relative text-[#123524] text-2xl font-bold flex items-center space-x-3">
             <div className="flex flex-col gap-2">
               <span className=" text-4xl font-bold text-black gap-1">
-                Lets's
+                Let's
                 <span className="italic font-thin text-[#FCCD2A] px-3 mr-1">
                   Connect
                 </span>
@@ -313,8 +296,9 @@ const Home = () => {
               <h2 className="font-bold text-2xl">Azka Ayu Maharani</h2>
             </div>
             <p className=" text-justify text-gray-600 py-8">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi,
-              culpa temporibus? Numquam neque quibusdam aliquid temporibus
+              Communication Science student passionate about marketing and
+              communication, with experience in copywriting, content planning,
+              and digital marketing.
             </p>
             <div className="flex flex-row space-x-4">
               <div className="w-12 h-12 bg-[#FCCD2A] rounded-full flex items-center justify-center text-[#123524]">
@@ -334,23 +318,37 @@ const Home = () => {
 
           <div className="flex flex-row justify-around max-w-[400px] w-full gap-6">
             <div className="flex flex-col space-y-3 text-gray-600">
-                <h2 className="mb-4 font-bold text-[#FCCD2A]">Navigation</h2> 
-                <a href="" className="text-gray-600">Home</a>
-                <a href="" className="text-gray-600">Services</a>
-                <a href="" className="text-gray-600">Tools</a>
-                <a href="" className="text-gray-600">Education & Work</a>
-                <a href="" className="text-gray-600">Portfolio</a>
-                <a href="" className="text-gray-600">News & Blogs</a>
+              <h2 className="mb-4 font-bold text-[#FCCD2A]">Navigation</h2>
+              <a href="#about" className="text-gray-600">
+                Home
+              </a>
+              <a href="#services" className="text-gray-600">
+                Services
+              </a>
+              <a href="#tools" className="text-gray-600">
+                Tools
+              </a>
+              <a href="#background" className="text-gray-600">
+                Education & Work
+              </a>
+              <a href="#portfolio" className="text-gray-600">
+                Portfolio
+              </a>
+              <a href="#blogs" className="text-gray-600">
+                News & Blogs
+              </a>
+              <a href="#achievement" className="text-gray-600">
+                Achievements
+              </a>
             </div>
             <div className="flex flex-col space-y-3 text-gray-600">
-                <h2 className="mb-4 font-bold text-[#FCCD2A]">Contact</h2> 
-                <p className="text-gray-600">azkaayumhrn@gmail.com</p>
-                <p className="text-gray-600">0895701899600</p>
-                <p className="text-gray-600">linkedin.com/in/azka-ayu-maharani</p>
-                <p className="text-gray-600">Bandung, Indonesia</p>
+              <h2 className="mb-4 font-bold text-[#FCCD2A]">Contact</h2>
+              <p className="text-gray-600">azkaayumhrn@gmail.com</p>
+              <p className="text-gray-600">0895701899600</p>
+              <p className="text-gray-600">linkedin.com/in/azka-ayu-maharani</p>
+              <p className="text-gray-600">Bandung, Indonesia</p>
             </div>
           </div>
-
         </div>
       </section>
     </div>
