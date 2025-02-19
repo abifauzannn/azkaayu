@@ -69,7 +69,7 @@ export default function Tools() {
                 {/* Render the icon */}
                 {tool.icon}
               </div>
-              <h3 className="font-bold">{tool.name}</h3>
+              <h3 className="font-bold flex-grow">{tool.name}</h3>
               <p className="text-sm text-gray-500">{tool.category}</p>
             </motion.div>
           ))}

@@ -3,7 +3,7 @@ import "./index.css";
 
 const AutoScrollingText = () => {
   return (
-    <div className="scroll-container">
+    <div className="scroll-container mt-20 md:mt-0">
       <div className="scroll-text">
         {/* Konten scroll yang digandakan */}
         <div className="scroll-content flex items-center font-bold">

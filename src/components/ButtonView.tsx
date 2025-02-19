@@ -23,7 +23,7 @@ const PortfolioButtons: React.FC<ButtonProps> = ({
         className="bg-[#FCCD2A] p-1 gap-1  rounded-full flex flex-row justify-between cursor-pointer"
      
       >
-        <div className="bg-[#1F4529]  py-1 px-7 font-bold rounded-full text-center text-white flex justify-center items-center">
+        <div className="bg-[#1F4529] text-sm  py-1 px-7 font-bold rounded-full text-center text-white flex justify-center items-center">
           {portfolioText}
         </div>
 

@@ -35,7 +35,7 @@ export default function CityHover() {
   const [hoveredCity, setHoveredCity] = useState<string | null>(null);
 
   return (
-    <div className="flex flex-row justify-center gap-4 p-4">
+    <div className="flex flex-row justify-center gap-4 md:p-4">
       {/* List Nama Kota */}
       <div className="w-full border-gray-200 border rounded-2xl p-7">
         <div className="flex items-center gap-4">
@@ -65,7 +65,7 @@ export default function CityHover() {
       </div>
 
       {/* Tampilan Gambar */}
-      <div className="w-full flex flex-row justify-end items-center rounded-lg">
+      <div className="w-full hidden md:flex flex-row justify-end items-center rounded-lg">
         {hoveredCity ? (
           <img src={hoveredCity} alt="City" className=" max-w-[400px]" />
         ) : (

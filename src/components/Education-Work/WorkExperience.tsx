@@ -32,7 +32,7 @@ const workExperience: Experience[] = [
 
 const WorkExperience: React.FC = () => {
   return (
-    <div className="bg-white rounded-2xl border border-gray-200 p-6 w-[50%] h-[500px]">
+    <div className="bg-white rounded-2xl border border-gray-200 p-6 w-full md:w-[50%] md:h-[500px]">
       <div className="flex items-center space-x-3 mb-4">
         <div className="bg-[#FCCD2A] p-4 rounded-full">
           <FaBriefcase className="text-black" size={24} />
